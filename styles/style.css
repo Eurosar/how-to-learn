@@ -1,3 +1,7 @@
+/* div {
+  border: 1px solid red;
+}
+*/
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -7,20 +11,89 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+.link {
+  color:#2f80ed;
+  text-decoration: none;
+}
+
+.logo {
+  background-image: url(../images/logo_place_header.svg);
+  width: 183px;
+  height: 32px;
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
 }
 
 .header {
+  background-color: #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
 }
+
+.header__square-pic_place {
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
+
+.header__title {
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.header__title_place {
+  margin-left: 64px;
+  align-self: center;
+  z-index: 9;
+}
+
+.header__subtitle {
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  z-index: 9;
+}
+
+.header__subtitle_place {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+}
+
+.header__main-illustration_place {
+  background-image: url(../images/header-image.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {

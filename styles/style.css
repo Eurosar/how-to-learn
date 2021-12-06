@@ -102,7 +102,7 @@
   justify-content: space-between;
 }
 
-.two-columns_text_size {
+.two-columns__brief_text_size {
   margin: 0;
   padding: 0;
   line-height: 1.2;
@@ -111,7 +111,6 @@
 
 .two-columns__brief {
   width: 175px;
-  color: #2f80ed;
 }
 
 .two-columns__main-text {
